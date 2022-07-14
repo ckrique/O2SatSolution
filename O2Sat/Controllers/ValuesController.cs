@@ -63,7 +63,7 @@ namespace O2Sat.Controllers
                 await restClient.PostAsyncTriggerSensorBackDoor("DOWN");
             }
 
-            string retorno = sensor.o2Saturation.value + "|" + exhaustor.state.value;
+            string retorno = Convert.ToDouble(sensor.o2Saturation.value).ToString("0.0") + " %" + "|" + exhaustor.state.value;
 
             return retorno;
 
