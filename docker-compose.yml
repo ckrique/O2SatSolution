@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  o2sat:
+    image: ${DOCKER_REGISTRY-}o2sat
+    build:
+      context: .\O2Sat
+      dockerfile: Dockerfile
