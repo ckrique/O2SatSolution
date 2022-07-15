@@ -115,8 +115,6 @@ namespace FIWARE.OrionClient.REST
 
         public async Task<string> PatchAsyncTriggerExhaustorCommand(string command)
         {
-            //var (authResult, message) = await Authentication.AquireTokenAsync();
-
             string url = "http://localhost:1026/v2/entities/urn:ngsi-ld:fanEhxaustor:001/attrs";
             var httpClient = new HttpClient();
             HttpResponseMessage response;
@@ -172,7 +170,6 @@ namespace FIWARE.OrionClient.REST
 
                 return thing;
             }
-
         }
 
         /// <summary>
